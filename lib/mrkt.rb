@@ -6,6 +6,7 @@ require 'mrkt/concerns/authentication'
 require 'mrkt/concerns/crud_helpers'
 require 'mrkt/concerns/crud_campaigns'
 require 'mrkt/concerns/crud_leads'
+require 'mrkt/concerns/crud_activities'
 require 'mrkt/concerns/crud_lists'
 require 'mrkt/concerns/import_leads'
 require 'mrkt/concerns/crud_custom_objects'
@@ -19,6 +20,7 @@ module Mrkt
     include CrudHelpers
     include CrudCampaigns
     include CrudLeads
+    include CrudActivities
     include CrudLists
     include ImportLeads
     include CrudCustomObjects
